@@ -117,11 +117,11 @@
     //the list of all items that are provided on the site 
     //all items are stored in the array 
     //each item which is stored is an object 
-    var items = [{name:"Playstation 3", details:"ply362", cost:30000, quantity: 10}, 
-    {name:"Samsung LCD", details:"sms321", cost:10000, quantity:12}, 
-    {name:"Asus ROG", details:"Arg123", cost:100000, quantity:15}, 
-    {name:"Nintendo WII PINK Edition", details:"ntn332", cost:36000, quantity: 16},
-    {name:"HP Envy Printer", details:"hp290", cost:25000, quantity:20} 
+    var items = [{name:"Playstation 3", details:0, cost:30000, quantity: 10}, 
+    {name:"Samsung LCD", details:1, cost:10000, quantity:12}, 
+    {name:"Asus ROG", details:2, cost:100000, quantity:15}, 
+    {name:"Nintendo WII PINK Edition", details:3, cost:36000, quantity: 16},
+    {name:"HP Envy Printer", details:4, cost:25000, quantity:20} 
     
       
 
@@ -145,6 +145,8 @@
 
 
     function init(){
+
+       
 
       buildItems();
       var q = document.querySelectorAll(".productItem");
@@ -293,58 +295,7 @@
 
     }
 
-    //add item from the input
-    function addTheItem(){
-
-      var addItem = (document.getElementById("item").value).toLowerCase(); 
-      if(addItem === "ply362"){
-          
-          
-         var idItem = 0; 
-
-
-      }
-      
-      var iteminfo = event.target.dataset;  
-      var itemincart = false; 
-      iteminfo.qty = 1; 
-      
-      shopcart.forEach(function(v){
-
-        if(v.id == 0){
-
-          v.qty = parseInt(v.qty) + parseInt(iteminfo.qty);
-          itemincart = true;  
-
-
-
-        }
-
-
-
-
-
-      });
-
-      if(!itemincart){
-        
-        shopcart.push(iteminfo);
-
-
-
-      }
-
-
-
-      
-      localStorage.setItem("scart", JSON.stringify(shopcart) );
-      outputCart();
-
-
-
-      console.log(addItem); 
-      console.log(shopcart); 
-    }
+    
 
     
 
