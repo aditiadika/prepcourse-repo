@@ -4,6 +4,9 @@ arrays into one array
 
 
 */
+// halo mas selamat sore
+// testing 
+// hello world
 
 const first = ['Behind', 'every', 'great', 'man'];
 const second = ['is', 'a','woman'];
