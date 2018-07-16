@@ -6,6 +6,8 @@ This is a program which lets you reverse a string
 
 */
 
+// halo selamat sore mas, saya dika 
+
 let firstString = "ibu ratna antar ubi"; 
 
 function reverseWords(words){
