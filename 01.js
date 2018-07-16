@@ -6,7 +6,10 @@ This is a program which lets you reverse a string
 
 */
 
-// halo selamat sore mas, saya dika 
+// halo selamat sore mas, saya dika
+// testing 
+// hello world
+// coba coba 
 
 let firstString = "ibu ratna antar ubi"; 
 
